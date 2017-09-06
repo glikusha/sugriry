@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/side_padding"
+    android:paddingRight="@dimen/side_padding"
+    tools:context="com.example.lilja.sugriry.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_margin_bottom"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:text="@string/about_sugri"
+        android:textAlignment="center"
+        android:textSize="@dimen/desctiotion_text_size"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_layout_height"
+        android:scaleType="center"
+        android:src="@drawable/sugri"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_margin_bottom"
+        android:text="Contact Information"
+        android:textAlignment="center"
+        android:textSize="@dimen/contact_text_size"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/image_margin_right"
+            android:src="@drawable/ic_language_black_24dp" />
+
+        <TextView
+            android:id="@+id/infoTxtCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="https://turunsugrit.wordpress.com/"
+            android:textSize="@dimen/info_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/image_margin_right"
+            android:src="@drawable/ic_mail_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/e_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="turku.sugri@gmail.com"
+            android:textSize="@dimen/info_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/image_margin_right"
+            android:src="@drawable/ic_place_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turun Yliopisto, Turku, Finland"
+            android:textSize="@dimen/info_text_size" />
+    </LinearLayout>
+
+</LinearLayout>
